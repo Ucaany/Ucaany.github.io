@@ -58,6 +58,20 @@ Version      : 1.0
             }
 
 
+    $(document).ready(function() {
+        $('.popup-youtube').magnificPopup({
+            type: 'iframe',
+            iframe: {
+                patterns: {
+                    youtube: {
+                        index: 'youtube.com/',
+                        id: 'v=',
+                        src: 'https://www.youtube.com/embed/%id%?autoplay=1'
+                    }
+                }
+            }
+        });
+    });
 
 
 
